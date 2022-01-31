@@ -119,28 +119,28 @@ public class ReviewboardController {
 
 
 
-			String filePath_photo = "";
-			File file_path = new File("C:\\Users\\");
-			File[] fileList = file_path.listFiles();
-			String tmp = "";
-
-			// String filePath1 =
-			// "C:/Workspace_Spring/FinalProject/src/main/webapp/resource/photo_upload/";
-			
-
-			if (fileList.length > 0) {
-				for (int i = 0; i < fileList.length; i++) {
-					System.out.println(fileList[i]);
-					tmp = fileList[i] + "\\git\\yaboja\\FinalProject\\src\\main\\webapp\\resource\\photo_upload";
-					File file_exe = new File(tmp);
-					if (file_exe.isDirectory()) {
-						filePath_photo = tmp;
-					}
-				}
-			}
-
-					
-			String filePath1 = filePath_photo+"\\";
+//			String filePath_photo = "";
+//			File file_path = new File("C:\\Users\\");
+//			File[] fileList = file_path.listFiles();
+//			String tmp = "";
+//
+//			// String filePath1 =
+//			// "C:/Workspace_Spring/FinalProject/src/main/webapp/resource/photo_upload/";
+//			
+//
+//			if (fileList.length > 0) {
+//				for (int i = 0; i < fileList.length; i++) {
+//					System.out.println(fileList[i]);
+//					tmp = fileList[i] + "\\git\\yaboja\\FinalProject\\src\\main\\webapp\\resource\\photo_upload";
+//					File file_exe = new File(tmp);
+//					if (file_exe.isDirectory()) {
+//						filePath_photo = tmp;
+//					}
+//				}
+//			}
+//
+//					
+//			String filePath1 = filePath_photo+"\\";
 			String filePath = dftFilePath + "resource" + File.separator + "photo_upload" + File.separator;
 	
 			File file = new File(filePath);
@@ -151,34 +151,34 @@ public class ReviewboardController {
 			
 			
 
-			File file1 = new File(filePath1);
-			if (!file1.exists()) {
-				file1.mkdirs();
-			}
+//			File file1 = new File(filePath1);
+//			if (!file1.exists()) {
+//				file1.mkdirs();
+//			}
 			String realFileNm = "";
 			SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
 			String today = formatter.format(new java.util.Date());
 			realFileNm = today + UUID.randomUUID().toString() + filename.substring(filename.lastIndexOf("."));
 			String rlFileNm = filePath + realFileNm;
-			String rlFileNm1 = filePath1 + realFileNm;
+//			String rlFileNm1 = filePath1 + realFileNm;
 			///////////////// 서버에 파일쓰기 /////////////////
 			InputStream is = request.getInputStream();
 			OutputStream os = new FileOutputStream(rlFileNm);
-			OutputStream os1 = new FileOutputStream(rlFileNm1);
+//			OutputStream os1 = new FileOutputStream(rlFileNm1);
 			int numRead;
 			byte b[] = new byte[Integer.parseInt(request.getHeader("file-size"))];
 
 			while ((numRead = is.read(b, 0, b.length)) != -1) {
 				os.write(b, 0, numRead);
-				os1.write(b, 0, numRead);
+//				os1.write(b, 0, numRead);
 			}
 			if (is != null) {
 				is.close();
 			}
 			os.flush();
 			os.close();
-			os1.flush();
-			os1.close();
+//			os1.flush();
+//			os1.close();
 			///////////////// 서버에 파일쓰기 /////////////////
 			// 정보 출력
 			sFileInfo += "&bNewLine=true";

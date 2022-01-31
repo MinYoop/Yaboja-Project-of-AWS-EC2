@@ -101,7 +101,7 @@ body {
 
    <table border=1 class="table table-bordered">
       <tr align="center">
-         <td align="center"><a href = "http://pf.kakao.com/_Crxhxaj">
+         <td align="center"><a href = "http://pf.kakao.com/_xkspBb/chat">
          <img src ="img/kakaotalk.JPG" style="cursor: pointer;"></a><p>1:1 관리자 채팅</p></td>
          <td align="center">
          <a href = "https://playchat.ai/mobile/chatbot/blank_zlxl932_1547599475956">

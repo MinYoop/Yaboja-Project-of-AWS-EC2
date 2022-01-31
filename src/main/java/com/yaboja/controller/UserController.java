@@ -373,10 +373,10 @@ public class UserController {
                 PrintWriter out = response.getWriter();
                 out.println("<script>alert('탈퇴한 회원입니다.');</script>"); // history.go(-1);</script>
                 out.flush();
-                return "main";
+                return "redirect:main.do";
         	}else {
         		session.setAttribute("dto", dto);
-        		return "main";
+        		return "redirect:main.do";
         	}
         }
        

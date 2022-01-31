@@ -111,7 +111,7 @@ String.prototype.trim = function () { //trim
 		<div align="center">
 			<center>
 				<input type="button" value="수동으로 네이버영화에서 상영작 크롤링/종영작 업데이트" onClick="loadMovie();" />
-				<p> 현재 크롤링 스케줄러 1분마다 실행 중 입니다. </p>
+				<p> 현재 크롤링 스케줄러 6시간 마다 실행 중 입니다. </p>
 				<p id="ok"></p>
 			</center>
 		</div>
