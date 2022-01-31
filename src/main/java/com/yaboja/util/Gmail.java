@@ -7,6 +7,6 @@ public class Gmail extends Authenticator{
 	
 	@Override
 	protected PasswordAuthentication getPasswordAuthentication() {
-		return new PasswordAuthentication("osh5656@gmail.com","sh144586!@");
+		return new PasswordAuthentication("myk430s@gmail.com","phwulktkreelvyjo");//앱용 구글 계정 2차 비번임
 	}
 }

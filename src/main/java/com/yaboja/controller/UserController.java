@@ -253,8 +253,8 @@ public class UserController {
     	String emailHash=SHA256.getSHA256(email);
     	
     	//host확인!!!!!!!!!!!!!!
-    	String host = "http://localhost:8787/controller/";
-    	String from = "";
+    	String host = "http://minyeop.site/controller/";
+    	String from = "myk430s@gmail.com";
     	String to = email;
     	String subject = "회원가입을 위한 이메일 인증 메일입니다.";
     	String content ="인증 번호 : "+emailHash;
@@ -270,7 +270,7 @@ public class UserController {
     	p.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
     	p.put("mail.smtp.socketFactory.fallback","false");
     	
-    	
+    	System.out.println("from:" +from);
     	try{
     		Authenticator auth = new Gmail();
     		Session ses = Session.getInstance(p, auth);

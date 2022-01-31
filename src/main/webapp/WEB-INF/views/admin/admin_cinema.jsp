@@ -96,7 +96,7 @@
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript"
-		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=fcce2df2939bca5734fd756caf9ea252&libraries=clusterer"></script>
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=28f7b9e900b2d7ec5a8b1c589fe4f2bd&libraries=clusterer"></script>
 	
 
 	<script>
