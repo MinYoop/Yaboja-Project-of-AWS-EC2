@@ -77,7 +77,11 @@
 			</nav>		
 		</c:otherwise>
 	</c:choose>
-
+	<br/>
+	<p style="padding-left:200px"> * 영화를 골라서 해당 영화에 대한 후기를 자유롭게 남기고 댓글 작성으로 공감할 수 있습니다. </p>
+	<p style="padding-left:200px"> * 게시글 작성 시 네이버 스마트 에디터 api를 통하여 문서 수정 및 사진 업로드 또한 가능하도록 구현하였습니다. </p>
+	<p style="padding-left:200px"> * 내가 쓴 게시물일 경우에만 수정 및 삭제 가능하도록 구현하였습니다. </p>
+	<p style="padding-left:200px"> * 페이징 처리도 적용하였습니다. </p>
    <div class="container">
       <h2>후기게시판</h2>
       <form action="#">

@@ -74,7 +74,6 @@ public class MovieController {
 		
 		
 		List<MovieDto> movies = biz.selectPreMovies();
-		Collections.sort(movies,Collections.reverseOrder()); //최신영화 순으로 정렬
 //		for(MovieDto movie : movies) {
 //			System.out.println(movie);
 //		}		

@@ -88,12 +88,8 @@
 	<br/>
 	<br/>
 	<h3 class="text-center">개봉예정작</h3>
-	
-	<%@ include file="../inc/movielist2.jsp"%>
-	
-	
-	
-	
+	<p style="padding-left:200px"> * 이 페이지의 개봉예정작 데이터는 단순히 실시간으로 https://movie.naver.com/movie/running/premovie.naver 에서 크롤링한 데이터입니다. </p>
+	<%@ include file="../inc/movielist2.jsp"%>	
 
 	<!-- Footer -->
 	<%@ include file="../inc/footer.jsp"%>

@@ -92,10 +92,10 @@
 	<br/>
 	<br/>
 	<h3 class="text-center">현재상영작</h3>
-	
-	<%@ include file="../inc/movielist.jsp"%>
-	
-	
+	<p style="padding-left:200px"> * 이 페이지는 데이터베이스 영화 테이블에 '상영작'인 조건으로  불러오는 데이터입니다. 돋보기나 영화 제목을 클릭하면 영화 상세 정보를 볼 수 있습니다.</p>
+	<p style="padding-left:200px"> 이 때 출연 배우나 상세 데이터는 실시간으로 크롤링한 데이터입니다. '예매하기' 버튼을 누르면 네이버 예매페이지로 링크를 걸어두었습니다. </p>
+	<p style="padding-left:200px"> '매칭하러가기' 버튼을 누르면 해당 영화에 대한 매칭 게시글만 검색되는 페이지로 넘겨줍니다. </p>
+	<%@ include file="../inc/movielist.jsp"%>	
 
 	<!-- Footer -->
 	<%@ include file="../inc/footer.jsp"%>

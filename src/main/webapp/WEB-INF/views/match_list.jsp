@@ -164,8 +164,11 @@ body {
 
 
       </div>
-      <br>
-
+      <p style="padding-left:200px"> * MyPage에서 결제 api를 통해 코인을 충전(test 결제 무료)하면 코인 1개를 써서 매칭 게시글을 남길 수 있습니다.</p>
+      <p style="padding-left:200px"> * 진행 중인 매칭글이 있으면 매칭을 신청할 수 없도록 구현하였습니다.</p>
+	  <p style="padding-left:200px"> * 매칭 글을 보고 누군가 매칭신청을 하면 우측 상단에 알림이 가고 상대방이 수락을 하면 채팅방이 생깁니다. </p>
+	  <p style="padding-left:200px"> * 좌측에 '등록 영화관으로 매칭'을 누르면 회원가입시 설정했던 영화관 세 곳으로 필터링 된 게시글만 보입니다.  </p>
+	  <p style="padding-left:200px"> * 좌측에 '지도로 영화관 매칭'을 누르면 클러스터러가 적용된 카카오 지도에서 영화관 마커를 클릭하여 해당 게시글만 볼 수 있습니다. </p>
       <table border=1 class="table table-bordered">
          <tr align="center">
             <td width="100px"><h5 style="color: navy; font-weight: bold;">작성자</h5></td>

@@ -92,6 +92,10 @@
 	<!-- Movie List -->
 	
 	<%@ include file="inc/movielist.jsp"%>
+	<p style="padding-left:200px">     * 이 영화 정보들은 https://movie.naver.com 에서 현재상영작을 기준으로 서버에서 6시간 마다 크롤링하여 저장된 데이터 입니다.</p>
+	<p style="padding-left:200px">     * 웹 서버는 AWS EC2 클라우드 인스턴스로 ubuntu 리눅스에 구축하였고 DB서버는 AWS EC2 클라우드 Windows Server 2019에 oracle로 구축하였습니다.</p>
+	<p style="padding-left:200px">     * 관리자 페이지에서는 카카오 지도 api를 통해 영화관을 등록/삭제할 수 있습니다. 영화 데이터를 버튼을 통해 수동적으로 크롤링할 수있습니다. 회원정보를 관리할 수 있습니다.</p>
+	<p style="padding-left:200px">		     관리자 ID : admin PW : 123 로그인 후 맨 우측 AdminManagement 탭
 	<!-- Slider -->
 	<%@ include file="inc/slide.jsp"%>
 
