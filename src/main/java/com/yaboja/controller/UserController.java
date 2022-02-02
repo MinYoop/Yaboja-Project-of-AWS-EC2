@@ -80,21 +80,29 @@ public class UserController {
 	}
 	//회원가입 처리
 	@RequestMapping(value="join.do", method=RequestMethod.POST)
-	public String join(UserDto userdto,HttpServletResponse response) throws IOException {
-		int res=userbiz.insert(userdto);
-		if(res>0) {
-			response.setContentType("text/html; charset=UTF-8");
-            PrintWriter out = response.getWriter();
-            out.println("<script>alert('회원가입을 성공하였습니다.');</script>"); // history.go(-1);</script>
-            out.flush();
-			return "main";
-		}else {
-			response.setContentType("text/html; charset=UTF-8");
-            PrintWriter out = response.getWriter();
-            out.println("<script>alert('회원가입을 실패하였습니다.');</script>"); // history.go(-1);</script>
-            out.flush();
-			return "joinform";
+	public String join(UserDto userdto,HttpServletResponse response) throws Exception {
+		int res;
+		try {
+			res = userbiz.insert(userdto);
+			if(res>0) {
+				response.setContentType("text/html; charset=UTF-8");
+	            PrintWriter out = response.getWriter();
+	            out.println("<script>alert('회원가입을 성공하였습니다.');</script>"); // history.go(-1);</script>
+	            out.flush();
+				return "main";
+			}else {
+				response.setContentType("text/html; charset=UTF-8");
+	            PrintWriter out = response.getWriter();
+	            out.println("<script>alert('회원가입을 실패하였습니다.');</script>"); // history.go(-1);</script>
+	            out.flush();
+				return "joinform";
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		return null;
+		
 		
 	}
 	//로그인 폼
@@ -390,23 +398,30 @@ public class UserController {
 	public String kakaoJoin(UserDto userdto,HttpSession session,HttpServletResponse response) throws IOException {
 		
 		userdto.setUserpw("kakao");
-		int res=userbiz.insert(userdto);
+		int res;
+		try {
+			res = userbiz.insert(userdto);
+			if(res>=0) {
+				//성공
+				session.setAttribute("dto",userdto);
+				response.setContentType("text/html; charset=UTF-8");
+	            PrintWriter out = response.getWriter();
+	            out.println("<script>alert('로그인 성공하였습니다.');</script>"); // history.go(-1);</script>
+	            out.flush();
+				return "main";
+			}else {
+				//실패
+				return "main";
+			}
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String id=userdto.getUserid();
 		userdto=userbiz.selectOne(id);
 		
-		if(res>=0) {
-			//성공
-			session.setAttribute("dto",userdto);
-			response.setContentType("text/html; charset=UTF-8");
-            PrintWriter out = response.getWriter();
-            out.println("<script>alert('로그인 성공하였습니다.');</script>"); // history.go(-1);</script>
-            out.flush();
-			return "main";
-		}else {
-			//실패
-			return "main";
-		}
-		
+		return null;
 	} 
 	
 	//access token변환

@@ -3,10 +3,14 @@ package com.yaboja.bizImpl;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.yaboja.biz.UserBiz;
+import com.yaboja.controller.ReviewboardController;
 import com.yaboja.daoImpl.UserDaoImpl;
 import com.yaboja.dto.CinemaDto;
 import com.yaboja.dto.ReviewboardDto;
@@ -18,20 +22,41 @@ public class UserBizImpl implements UserBiz {
 	@Autowired
 	UserDaoImpl dao;
 
-	@Override
+	@Autowired
+	BCryptPasswordEncoder bcryptPasswordEncoder;
 
+	private static final Logger logger = LoggerFactory.getLogger(ReviewboardController.class);
+
+	@Override
 	public UserDto selectOne(String id) {
 		UserDto dto = dao.selectOne(id);
 		return dto;
 	}
 
-	public int insert(UserDto userdto) {
+	public int insert(UserDto userdto) throws Exception {
+
+		// 비밀번호 암호화 spring-sequrity
+		String encPassword = bcryptPasswordEncoder.encode(userdto.getUserpw());
+		userdto.setUserpw(encPassword);
+		logger.info("암호화된 비밀번호 : " + userdto.getUserpw());
 		return dao.insert(userdto);
 	}
 
 	public UserDto login(String userid, String userpw) {
-		return dao.login(userid, userpw);
 
+		UserDto dto = dao.selectOne(userid);
+
+		String dbPw = dto.getUserpw();
+
+		logger.info("암호화 비밀번호" + dbPw);
+		logger.info("입력 비밀번호" + userpw);
+		if (bcryptPasswordEncoder.matches((CharSequence)userpw,dbPw)) {
+			logger.info("비밀번호 일치");
+			return dto;
+		} else {
+			logger.info("비밀번호 불일치");
+			return null;
+		}
 	}
 
 	public List<UserDto> selectAll() {

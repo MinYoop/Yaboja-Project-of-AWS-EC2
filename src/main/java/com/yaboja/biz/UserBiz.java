@@ -11,7 +11,7 @@ public interface UserBiz {
 
 	public UserDto selectOne(String id);
 
-	public int insert(UserDto userdto);
+	public int insert(UserDto userdto) throws Exception;
 
 	public UserDto login(String userid, String userpw);
 
