@@ -81,9 +81,9 @@ String.prototype.trim = function () { //trim
 				<!-- 메뉴바 -->
 				<a href="movieBoard.do"><strong>Movie Board</strong></a> <a
 					href="matchingboardlist.do"><strong>Matching Board</strong></a> <a
-					href="reviewBoard.do"><strong>Review Board</strong></a> <a
+					href="reviewboard.do"><strong>Review Board</strong></a> <a
 					href="qnaboard.do"><strong>Q&A Board</strong></a> <a
-					href="adminPreferences.do"><strong>preferences</strong></a>
+					href="adminPreferences.do"><strong>AdminManagement</strong></a>
 				<div class="nav-underline"></div>
 			</nav>
 		</c:when>
@@ -107,6 +107,9 @@ String.prototype.trim = function () { //trim
 	<br>
 	<div class="container">
 		<h1>영화 관리</h1>
+		
+		<p style="padding-left:20px">* 스케줄러를 통해 설정 시간 주기로 자동 크롤링 되고 있지만 아래 버튼을 통해 수동으로 크롤링작업을 할 수 있습니다.</p> 
+		<p style="padding-left:20px">* 크롤링을 통해 db서버에 저장된 영화정보를 상영작과 종영작 나누어 확인할 수 있습니다.</p> 
 
 		<div align="center">
 			<center>

@@ -77,7 +77,7 @@
 			<!-- 메뉴바 -->
 			<a href="movieBoard.do"><strong>Movie Board</strong></a> 
 			<a href="matchingboardlist.do"><strong>Matching Board</strong></a> 
-			<a href="reviewBoard.do"><strong>Review Board</strong></a> 
+			<a href="reviewboard.do"><strong>Review Board</strong></a> 
 			<a href="qnaboard.do"><strong>Q&A Board</strong></a> 
 			<a href="adminPreferences.do"><strong>AdminManagement</strong></a>
 			<div class="nav-underline"></div>
@@ -109,6 +109,7 @@
 				<div class="container container-fluid"></div>
 				<div class="container container-fluid">
 					<h2 style="">결제하기</h2>
+					<p style="padding-left:20px">* 내 잔여 코인을 확인할 수 있습니다.</p>
 					<div class="jumbotron jumbotron-fluid">
 						<table>
 							<tr>
@@ -176,7 +177,8 @@
 			<form method="post" action="coin_imp.do" name="payment"
 				onSubmit="return CheckForm(this)">
 				<div class="form-group">
-					<h1>충전 금액</h1> 
+					<h1>충전 금액</h1>
+					<p style="padding-left:20px">* 아임포트 결제 api를 통해 카카오 테스트 결제를 연동하였습니다.</p> 
 					<select
 						class="form-control form-control-lg" name="point_val">
 						<option value="" selected>충전할 금액을 선택해주세요.</option>

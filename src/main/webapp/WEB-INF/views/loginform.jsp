@@ -60,6 +60,7 @@
 						카카오톡->전체설정->개인/보안->카카오계정->내정보관리 <br>사용자 정보 입력
 						
 					</span>
+					<p style="padding-left:20px">* 카카오 로그인 rest api를 통해 사용자 정보를 받아와 로그인 기능을 구현하였습니다. 첫 로그인시 추가 정보 입력이 필요합니다.</p> 
 				</div>
 
 				<div class="flex-c p-b-112">
@@ -67,7 +68,6 @@
 <!-- 						<i class="fa fa-facebook-f"></i> -->
 							<!--  https://kauth.kakao.com/oauth/authorize?client_id=f4bfa5f6b9448b69cd517b0762b28f21&redirect_uri=http://localhost:8787/controller/kakaologin.do&response_type=code&scope=account_email,age_range,gender" class="login100-social-item-->
 <!-- 					</a> -->
-
 					<a href="https://kauth.kakao.com/oauth/authorize?client_id=cacd5231c6e9a148742b217941190c01&redirect_uri=http://3.210.71.242:8080/controller/kakaologin.do&response_type=code&scope=account_email,age_range,gender">
 						<img src="img/kakao.png" alt="kakao" style="width: 200px; cursor: pointer;" onclick="location.href='https://kauth.kakao.com/oauth/authorize?client_id=cacd5231c6e9a148742b217941190c01&redirect_uri=http://localhost:8787/controller/kakaologin.do&response_type=code&scope=account_email,age_range,gender'">
 					</a>

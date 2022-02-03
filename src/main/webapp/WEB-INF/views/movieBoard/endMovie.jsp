@@ -90,7 +90,7 @@
 	
 	<h3 class="text-center">종영작</h3>
 	<p style="padding-left:200px"> * 네이버 영화 페이지 현재상영작을 기준으로 크롤링 했을 때 제 DB서버의 데이터와 비교하여 종영작으로 업데이트해준 영화 정보 데이터들입니다.  </p>
-	<p style="padding-left:200px"> * 페이징 처리가 되어있으며 2022년 1월 중후반부터 쌓인 데이터 입니다.  </p>
+	<p style="padding-left:200px"> * 페이징 처리가 되어있으며 2022년 2월 초부터 쌓인 데이터 입니다.  </p>
 	<%@ include file="../inc/endmovielist.jsp"%>
 	
 

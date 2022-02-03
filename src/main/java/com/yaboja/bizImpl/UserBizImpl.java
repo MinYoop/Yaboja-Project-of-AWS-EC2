@@ -48,8 +48,8 @@ public class UserBizImpl implements UserBiz {
 
 		String dbPw = dto.getUserpw();
 
-		logger.info("암호화 비밀번호" + dbPw);
-		logger.info("입력 비밀번호" + userpw);
+		logger.info("암호화 비밀번호 : " + dbPw);
+		logger.info("입력 비밀번호 : " + userpw);
 		if (bcryptPasswordEncoder.matches((CharSequence)userpw,dbPw)) {
 			logger.info("비밀번호 일치");
 			return dto;

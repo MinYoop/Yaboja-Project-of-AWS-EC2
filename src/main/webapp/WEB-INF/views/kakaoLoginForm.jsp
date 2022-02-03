@@ -133,10 +133,11 @@
 			fullRoadAddr +=extraRoadAddr;
 		}
 		document.getElementById('useraddress').value=fullRoadAddr;
-		document.getElementById('useraddress').fucus();
+		document.querySelector("input[name=useraddress]").focus(); // 이거 써야 창 닫힘.
+
 		return;
-		}
-	}).open();
+	}
+}).open('', '_self');
 }
 </script>
 <!-- 파일업로드 -->

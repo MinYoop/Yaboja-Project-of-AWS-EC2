@@ -78,7 +78,7 @@ function deletecheck() {
 			<!-- 메뉴바 -->
 			<a href="movieBoard.do"><strong>Movie Board</strong></a> 
 			<a href="matchingboardlist.do"><strong>Matching Board</strong></a> 
-			<a href="reviewBoard.do"><strong>Review Board</strong></a> 
+			<a href="reviewboard.do"><strong>Review Board</strong></a> 
 			<a href="qnaboard.do"><strong>Q&A Board</strong></a> 
 			<a href="adminPreferences.do"><strong>AdminManagement</strong></a>
 			<div class="nav-underline"></div>
@@ -107,10 +107,12 @@ function deletecheck() {
 	<div class="container">
 		<div>
 			<h1>마이페이지_매칭관리</h1>
+			<p style="padding-left:20px">* 신청하고 신청 받은 기록을 확인할 수 있습니다.</p> 
 		</div>
 		<br/> <br/>
 		<div>
 			<h3>신청한 매칭</h3>
+			
 		</div>
 		<br/>
 		<div class="jumbotron jumbotron-fluid">

@@ -98,7 +98,8 @@ body {
       <h1 style="color: black; font-weight: bold;">Q&A 게시판</h1>
    </div>
    <br>
-
+   <p style="padding-left:200px"> * 카카오톡 채널 서비스를 통해 카카오 QnA를 구현했습니다.</p>
+   <p style="padding-left:200px"> * 플레이쳇 챗봇 빌더 서비스를 통해 간단한 챗봇 시스템을 구현했습니다.</p>
    <table border=1 class="table table-bordered">
       <tr align="center">
          <td align="center"><a href = "http://pf.kakao.com/_xkspBb/chat">

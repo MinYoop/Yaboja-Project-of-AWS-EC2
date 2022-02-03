@@ -159,7 +159,7 @@
 
 				return;
 			}
-		}).open('http://localhost:8787/controller/joinform.do', '_self');
+		}).open('', '_self');
 	}
 </script>
 <!-- 파일업로드 -->
@@ -231,7 +231,7 @@
 					<div class="row control-group">
 						<div
 							class="form-group col-xs-12 floating-label-form-group controls">
-							<label>ID</label>
+							<label>ID</label> * ID 중복검사 기능이 있습니다.
 							<div style="display: -webkit-box;">
 								<input type="text" class="form-control" placeholder="ID"
 									name="userid" id="id" required="required" onblur="checkId();">
@@ -255,7 +255,8 @@
 					<div class="row control-group">
 						<div
 							class="form-group col-xs-12 floating-label-form-group controls">
-							<label>Password</label> <input type="password"
+							<label>Password</label> * 비밀번호는 spring-security를 적용하여 암호화되어 데이터베이스에 저장됩니다.
+							<input type="password"
 								class="form-control" placeholder="Password" id="password"
 								name="userpw" required="required">
 							<p class="help-block text-danger"></p>
@@ -290,7 +291,7 @@
 					<div class="row control-group">
 						<div
 							class="form-group col-xs-11 floating-label-form-group controls">
-							<label>Profile</label>
+							<label>Profile</label> * 이미지는 웹서버에 프로젝트 외부 경로로 업로드 되도록 구현하였습니다.
 							<div style="display: -webkit-box;">
 								<input type="file" class="form-control" id="fileUpload"
 									name="fileUpload" required="required"> <input
@@ -335,7 +336,7 @@
 					<div class="row control-group">
 						<div
 							class="form-group col-xs-11 floating-label-form-group controls">
-							<label>Address</label>
+							<label>Address</label> * 다음 도로명 주소 api를 연동했습니다.
 							<div style="display: -webkit-box;">
 								<input type="text" class="form-control" placeholder="Address"
 									id="useraddress" name="useraddress" required="required">
@@ -349,7 +350,7 @@
 					<div class="row control-group">
 						<div
 							class="form-group col-xs-11 floating-label-form-group controls">
-							<label>Email</label>
+							<label>Email</label> * Gmail라이브러리로 제 메일 계정에서 입력된 메일로 인증번호를 전송하도록 구현하였습니다.
 							<div style="display: -webkit-box;">
 								<input type="email" class="form-control"
 									placeholder="Email Address" id="email" name="useremail"

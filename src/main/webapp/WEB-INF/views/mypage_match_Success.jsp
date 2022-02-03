@@ -65,7 +65,7 @@
 			<!-- 메뉴바 -->
 			<a href="movieBoard.do"><strong>Movie Board</strong></a> 
 			<a href="matchingboardlist.do"><strong>Matching Board</strong></a> 
-			<a href="reviewBoard.do"><strong>Review Board</strong></a> 
+			<a href="reviewboard.do"><strong>Review Board</strong></a> 
 			<a href="qnaboard.do"><strong>Q&A Board</strong></a> 
 			<a href="adminPreferences.do"><strong>AdminManagement</strong></a>
 			<div class="nav-underline"></div>
@@ -91,6 +91,7 @@
 	<br><br>
 	<div class="container">
 	<h1 style="color:black; font-weight: bold;">진행중매칭</h1>
+	<p style="padding-left:20px">* 진행 중인 매칭이 있으면 매칭정보(영화, 영화관)와 상대방의 프로필을 확인하고 채팅방에 입장할 수 있습니다.</p> 
 	<div style="color:black; background-color:silver; padding:20px; margin:10px">
 <%
 	if(matchingDto == null){

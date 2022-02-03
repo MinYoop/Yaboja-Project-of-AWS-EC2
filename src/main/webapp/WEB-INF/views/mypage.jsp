@@ -78,7 +78,7 @@ function matchingboardDelete() {
 			<!-- 메뉴바 -->
 			<a href="movieBoard.do"><strong>Movie Board</strong></a> 
 			<a href="matchingboardlist.do"><strong>Matching Board</strong></a> 
-			<a href="reviewBoard.do"><strong>Review Board</strong></a> 
+			<a href="reviewboard.do"><strong>Review Board</strong></a> 
 			<a href="qnaboard.do"><strong>Q&A Board</strong></a> 
 			<a href="adminPreferences.do"><strong>AdminManagement</strong></a>
 			<div class="nav-underline"></div>
@@ -110,6 +110,7 @@ function matchingboardDelete() {
 				<div class="container container-fluid"></div>
 				<div class="container container-fluid">
 					<h2>내 정보</h2>
+					<p style="padding-left:20px">* 내 정보를 확인하고 수정할 수 있습니다.</p>
 					<div class="jumbotron jumbotron-fluid">
 						<form action="mypage_updateform.do" method="post">
 							<input type="hidden" name="userseq" value="${dto.userseq }" />
@@ -186,6 +187,7 @@ function matchingboardDelete() {
          <div class="form">
             <div class="container container-fluid">
                <h2>작성한 매칭</h2>
+               <p style="padding-left:20px">* 내가 작성한 매칭글을 확인할 수 있습니다.</p>
             </div>
             <div class="container container-fluid">
                <div class="jumbotron jumbotron-fluid">
@@ -259,6 +261,7 @@ function matchingboardDelete() {
 			<div class="form">
 				<div class="container container-fluid">
 					<h2>내 게시글</h2>
+					<p style="padding-left:20px">* 내가 작성한 영화리뷰를 확인할 수 있습니다.</p>
 				</div>
 				<div class="container container-fluid">
 					<div class="jumbotron jumbotron-fluid">

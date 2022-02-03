@@ -50,7 +50,7 @@
 			<!-- 메뉴바 -->
 			<a href="movieBoard.do"><strong>Movie Board</strong></a> 
 			<a href="matchingboardlist.do"><strong>Matching Board</strong></a> 
-			<a href="reviewBoard.do"><strong>Review Board</strong></a> 
+			<a href="reviewboard.do"><strong>Review Board</strong></a> 
 			<a href="qnaboard.do"><strong>Q&A Board</strong></a> 
 			<a href="adminPreferences.do"><strong>AdminManagement</strong></a>
 			<div class="nav-underline"></div>
@@ -76,6 +76,7 @@
 	<br>
 	<div class="container">
 		<h2>회원관리</h2>
+		<p style="padding-left:20px">* 가입된 회원정보를 확인하고 탈퇴처리와 관리자 전환 처리를 할 수 있는 페이지입니다.</p> 
 		<form action="#">
 			<div align="right">
 				<input type="text" class="control">

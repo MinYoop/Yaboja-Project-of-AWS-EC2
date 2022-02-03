@@ -57,9 +57,9 @@
 				<!-- 메뉴바 -->
 				<a href="movieBoard.do"><strong>Movie Board</strong></a> <a
 					href="matchingboardlist.do"><strong>Matching Board</strong></a> <a
-					href="reviewBoard.do"><strong>Review Board</strong></a> <a
+					href="reviewboard.do"><strong>Review Board</strong></a> <a
 					href="qnaboard.do"><strong>Q&A Board</strong></a> <a
-					href="adminPreferences.do"><strong>preferences</strong></a>
+					href="adminPreferences.do"><strong>AdminManagement</strong></a>
 				<div class="nav-underline"></div>
 			</nav>
 		</c:when>
@@ -86,7 +86,8 @@
 	<br>
 	
 	<h2 style="padding-left: 250px;"> 영화관 등록 및 삭제</h2>
-	
+	<p style="padding-left:250px">* 지도 api를 통해 영화관의 실제 위치를 검색하여 서비스에 사용될 영화관을 관리자가 등록/삭제할 수 있습니다.</p>
+	<p style="padding-left:250px">* 영화관 등록 버튼을 누른 후 '롯데시네마'나 'cgv'를 검색하여 편리하게 등록 할 수 있습니다.</p> 
 	<!-- 지도-------------------------------------------- -->
 	
 	   <center>

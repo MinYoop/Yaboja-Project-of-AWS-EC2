@@ -114,6 +114,7 @@ function matchingboardDelete() {
          <div class="form">
             <div class="container container-fluid">
                <h2>매칭 기록</h2>
+               <p style="padding-left:20px">* 성사된 매칭기록을 확인할 수 있습니다.</p> 
             </div>
             <div class="container container-fluid">
                <div class="jumbotron jumbotron-fluid">
